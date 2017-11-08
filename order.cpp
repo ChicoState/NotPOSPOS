@@ -1,7 +1,7 @@
 #include "order.h"
 
 order::order() {
-  tax = 7;
+  tax = 0.07;
 }
 
 void order::addItem(item i) {
@@ -24,7 +24,7 @@ double order::getTax() {
 }
 
 double order::getTotal() {
-  return getSubtotal() * (1 + (tax / 100.0));
+  return getSubtotal() * (1 + tax);
 }
 
 double order::balance(double paid) {
