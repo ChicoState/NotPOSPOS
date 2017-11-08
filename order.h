@@ -11,6 +11,7 @@ class order : public IOrder {
     double tax;
   public:
     order();
+    order(double);
   public:
     void addItem(item);
     vector <item> getItems();

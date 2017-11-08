@@ -4,6 +4,10 @@ order::order() {
   tax = 0.07;
 }
 
+order::order(double tax) {
+  this->tax;
+}
+
 void order::addItem(item i) {
   itemList.push_back(i);
 }
