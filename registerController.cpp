@@ -16,6 +16,7 @@ registerController::registerController(StoreInventory * inventory, order * check
     
     if(command.compare("buy") == 0)
     {
+
       item add = inventory->lookup((int)option);
       checkout->addItem(add);
       screen.displayRunningTotal(*checkout);
