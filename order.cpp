@@ -26,6 +26,8 @@ double order::getSubtotal() {
   for(int i = 0; i < itemList.size(); i++) {
     subtotal += itemList[i].getPrice();
   }
+  if( itemList.size() < 1 || subtotal < 0 )
+    subtotal = 0;
   return subtotal;
 }
 
